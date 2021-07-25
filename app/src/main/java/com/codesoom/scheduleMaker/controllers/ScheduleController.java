@@ -2,9 +2,13 @@ package com.codesoom.scheduleMaker.controllers;
 
 import com.codesoom.scheduleMaker.application.ScheduleService;
 import com.codesoom.scheduleMaker.domain.Schedule;
+import com.codesoom.scheduleMaker.domain.User;
 import com.codesoom.scheduleMaker.dto.ScheduleData;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
